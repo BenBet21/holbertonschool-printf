@@ -54,7 +54,7 @@
 |            [`main.h`](main.h)                  |                     main structure and the function prototypes                    |
 |         [`_printf.c`](_printf.c)               |                              main `_printf` function                              |
 |         [`_putchar.c`](_putchar.c)             |                              `_putchar` function                                  |
-| [`printf_fonction.c`](printf_function.c)       |                         contains all `_printf` functions                          |
+| [`printf_function.c`](printf_function.c)       |                         contains all `_printf` functions                          |
 |      [`man_3_printf`](man_3_printf)            |                       man page of the `_printf` functions                         |
 | [`specifiers_handler.c`](specifiers_handler.c) |                            `specifiers_handler` functions                         |
 |         [`README.md`](README.md)               |                                    README file                                    |
