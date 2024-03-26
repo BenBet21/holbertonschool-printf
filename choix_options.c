@@ -6,6 +6,7 @@ int choix_options(const char option, va_list args)
 
 	tableau_options liste[] = {
 		{'c', print_character},
+		{'s', print_string},
 		{'%', print_percentage},
 		{'\0', NULL}
 	};
