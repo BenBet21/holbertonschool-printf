@@ -61,42 +61,38 @@ int print_percentage(va_list args)
 /**
  * print_integer - Print an integer from a variadic argument list
  * @args: The va_list containing the integer to print
- * * Return: The number of characters printed
+ * Return: 0 if printing is successful, otherwise -1
  */
 
 int print_integer(va_list args)
 {
 	int num = va_arg(args, int);
+	int valabsolue_num = 0;
 	int temp = 0;
 	int nbdivi = 1;
+	int compteur = 0;
 
-	if (num == 0)
-	{
-		_putchar('0');
-		return (1);
-	}
 	if (num < 0)
 	{
+		valabsolue_num = (num * -1);
 		_putchar('-');
-		num = -num;
+		compteur++;
 	}
 
-	temp = num;
+	else
+		valabsolue_num = num;
+	temp = valabsolue_num;
 
-	while (temp / 10 != 0)
+	while (temp > 9)
 	{
-		nbdivi *= 10;
 		temp /= 10;
+		nbdivi *= 10;
 	}
-
-	temp = num;
-
-	while (nbdivi != 0)
+	while (nbdivi >= 1)
 	{
-		_putchar(temp / nbdivi + '0');
-		temp %= nbdivi;
+		_putchar(((valabsolue_num / nbdivi) % 10) + '0');
 		nbdivi /= 10;
+		compteur++;
 	}
-
 	return (0);
 }
