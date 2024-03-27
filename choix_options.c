@@ -19,6 +19,8 @@ int choix_options(const char option, va_list args)
 		{'c', print_character},
 		{'s', print_string},
 		{'%', print_percentage},
+		{'d', print_integer},
+		{'i', print_integer},
 		{'\0', NULL}
 	};
 
@@ -31,8 +33,8 @@ int choix_options(const char option, va_list args)
 
 		index_liste++;
 	}
-		_putchar('%');
-		_putchar(option);
-		return (2);
+	_putchar('%');
+	_putchar(option);
+	return (2);
 }
 

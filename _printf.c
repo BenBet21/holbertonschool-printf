@@ -33,13 +33,13 @@ int _printf(const char *format, ...)
 	{
 		if (format[index] == '%')
 		{
-		longueur = longueur + choix_options(format[index + 1], args);
-		index = index + 2;
+			longueur = longueur + choix_options(format[index + 1], args);
+			index = index + 2;
 		}
 		else
 		{
-		longueur = longueur + _putchar(format[index]);
-		index++;
+			longueur = longueur + _putchar(format[index]);
+			index++;
 		}
 	}
 	va_end(args);
