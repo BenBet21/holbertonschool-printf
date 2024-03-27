@@ -66,11 +66,11 @@ int print_percentage(va_list args)
 
 int print_integer(va_list args)
 {
-	int num = va_arg(args, int);
-	int valabsolue_num = 0;
-	int temp = 0;
-	int nbdivi = 1;
-	int compteur = 0;
+	long int num = va_arg(args, int);
+	long int valabsolue_num = 0;
+	long int temp = 0;
+	long int nbdivi = 1;
+	long int compteur = 0;
 
 	if (num < 0)
 	{
