@@ -32,7 +32,7 @@ int print_string(va_list args)
 
 	if (s == NULL)
 	{
-		return (write(1, null, 6));
+		return (write(1, (null), 6));
 	}
 	while (*s != '\0')
 	{
@@ -55,4 +55,48 @@ int print_percentage(va_list args)
 	(void)args;
 	_putchar('%');
 	return (1);
+}
+
+
+/**
+ * print_integer - Print an integer from a variadic argument list
+ * @args: The va_list containing the integer to print
+ * * Return: The number of characters printed
+ */
+
+int print_integer(va_list args)
+{
+	int num = va_arg(args, int);
+	int temp = 0;
+	int nbdivi = 1;
+
+	if (num == 0)
+	{
+		_putchar('0');
+		return (1);
+	}
+	if (num < 0)
+	{
+		_putchar('-');
+		num = -num;
+	}
+
+	temp = num;
+
+	while (temp / 10 != 0)
+	{
+		nbdivi *= 10;
+		temp /= 10;
+	}
+
+	temp = num;
+
+	while (nbdivi != 0)
+	{
+		_putchar(temp / nbdivi + '0');
+		temp %= nbdivi;
+		nbdivi /= 10;
+	}
+
+	return (0);
 }
