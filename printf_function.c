@@ -76,7 +76,7 @@ int print_integer(va_list args)
 	{
 		valabsolue_num = (num * -1);
 		_putchar('-');
-		compteur++;
+		compteur = 1;
 	}
 
 	else
@@ -94,5 +94,5 @@ int print_integer(va_list args)
 		nbdivi /= 10;
 		compteur++;
 	}
-	return (0);
+	return (compteur);
 }
