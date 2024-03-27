@@ -1,0 +1,17 @@
+.TH _PRINTF 1 "2024, March" "version 1.0" "User Commands"
+
+.SH NAME
+.P
+_printf - Simplified printf function.
+
+.SH SYNOPSIS
+.P
+int _printf(const char *format, ...)
+
+.SH DESCRIPTION
+.P
+_printf - Simplified printf function.
+
+.SH AUTHORS
+.P
+Written by Benoit, Raphael, Thomas.
