@@ -1,17 +1,60 @@
-.TH _PRINTF 1 "2024, March" "version 1.0" "User Commands"
+.TH _PRINTF 1 "2024, March""version 1.0" "User Commands"
 
 .SH NAME
-.P
-_printf - Simplified printf function.
+.br
+_printf - Simplified printf function
+.br
+this function prints formatted
+.br
+data to the standard output.
 
 .SH SYNOPSIS
-.P
+.br
 int _printf(const char *format, ...)
 
 .SH DESCRIPTION
-.P
-_printf - Simplified printf function.
+.br
+this function is a simplified printf function.
+.br
+It processes additional arguments with the
+.br
+corresponding function and formats them
+.br
+before writing them standard out.
+
+4 Differents specifiers :
+.br
+  
+.br
+%c to print a character extract from args
+.br
+%s to print a string extracts from args
+.br
+%d to print an decimal integer
+.br
+%i to print an integer (dec, hex,...)
+
+.SH OPTIONS
+.br
+There is no options with this function
+
+.SH EXAMPLES
+.br
+_printf("Salut %cout le monde", t);  
+.br
+Standard Output : "Salut tout le monde".
+.br
+ 
+.br
+_printf("Salut %s le monde", tout);
+.br
+Standard Output : "Salut tout le monde".
+.br
+ 
+.br
+_printf("Rhone dept erotique %d", 69);
+.br
+Standard Output : "Rhone dept erotique 69".
 
 .SH AUTHORS
-.P
 Written by Benoit, Raphael, Thomas.
