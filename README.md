@@ -17,7 +17,6 @@
 ## :link: - Quick Links -
 * [Requirements for this project](#%EF%B8%8F⃣---requirements-for-this-project--)
 * [File descriptions](#%EF%B8%8F⃣---file-descriptions--)
-* [Flowchart](#%EF%B8%8F⃣---flowchart--)
 * [Team](#%EF%B8%8F⃣---team--)
 
 <br />
@@ -58,14 +57,6 @@
 |      [`man_3_printf`](man_3_printf)            |                       man page of the `_printf` functions                         |
 | [`specifiers_handler.c`](specifiers_handler.c) |                            `specifiers_handler` functions                         |
 |         [`README.md`](README.md)               |                                    README file                                    |
-
-<br />
-
-## #️⃣ - Flowchart -
-
-<br />
-
-<img width="1020px" height="600px" src="https://images.prismic.io/milanote/0b27fe8a-64e7-4bdb-bc22-94b2d0bee7f5_CleanShot+2023-06-06+at+15.27.55%402x.png?auto=compress%2Cformat&w=1200">
 
 <br />
 
